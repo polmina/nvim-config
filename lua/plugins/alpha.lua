@@ -3,7 +3,7 @@ return {
   cmd = "Alpha",
   opts = function()
     local dashboard = require "alpha.themes.dashboard"
-    dashboard.section.header.val = {
+    --[[dashboard.section.header.val = {
       " █████  ███████ ████████ ██████   ██████",
       "██   ██ ██         ██    ██   ██ ██    ██",
       "███████ ███████    ██    ██████  ██    ██",
@@ -15,7 +15,7 @@ return {
       "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
       "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
       "    ██   ████   ████   ██ ██      ██",
-    }
+    }]]--
     dashboard.section.header.opts.hl = "DashboardHeader"
 
     local button = require("astronvim.utils").alpha_button
