@@ -376,4 +376,8 @@ maps.n["<leader>uu"] = { ui.toggle_url_match, desc = "Toggle URL highlight" }
 maps.n["<leader>uw"] = { ui.toggle_wrap, desc = "Toggle wrap" }
 maps.n["<leader>uy"] = { ui.toggle_syntax, desc = "Toggle syntax highlight" }
 
+-- Move selected lines
+vim.keymap.set('v', 'J', ':m \'>+1<CR>gv=gv', {desc = 'Move selected line(s) down'})
+vim.keymap.set('v', 'K', ':m \'<-2<CR>gv=gv', {desc = 'Move selected line(s) up'})
+
 utils.set_mappings(astronvim.user_opts("mappings", maps))
